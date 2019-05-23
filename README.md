@@ -23,6 +23,9 @@ As a time-pressed user
 So that I can have a list of bookmarks
 I want to be able to add bookmarks
 ```
+## Domain model
+![Domain_model](./README_images/Domain_model.png)
+
 
 ## INSTRUCTIONS FOR THE USE OF SQL:
 
@@ -47,10 +50,14 @@ CREATE DATABASE bookmark_manager
 ```
 CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
 ```
+```
+ALTER TABLE bookmarks ADD COLUMN title VARCHAR(60);
+```
+
 ### To run the Bookmark Manager app:
 
 ```
-$ shotgun
+$ rackup
 ```
 
 ### To view bookmarks, navigate to `localhost:9393/bookmarks`.

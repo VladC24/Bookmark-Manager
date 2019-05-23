@@ -1,4 +1,4 @@
-feature 'going on /bookmarks' do
+feature 'viewing bookmarks' do
   scenario 'see all the bookmarks' do 
     Bookmark.create(url: "http://www.google.com", title: 'Google')
 
