@@ -26,6 +26,7 @@ class Bookmark
   end
 
   def self.create(url:, title:)
+    
     if ENV['RACK_ENV'] == 'test'
       connection = PG.connect(dbname: 'bookmark_manager_test')
     else
