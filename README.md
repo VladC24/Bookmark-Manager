@@ -13,16 +13,25 @@
 
 We'll be using a Behaviour Driven Development (BDD) cycle (i.e. outside-in testing: Capybara first).
 
+* There are generally four actions you can take with persistent data:
+
+    * Creating data
+    * Reading data
+    * Updating data
+    * Deleting data
+
+These are usually abbreviated to the acronym CRUD. a CRUD application is one that creates, reads, updates, and deletes data. The majority of web applications are, essentially, CRUD applications.
 
 Objects:
+
 * Bookmark
-	* Add
-	* Display
-	* Delete
-	* Filter
-	* Categories
-	* Update
-	* Comment
+	 * Add
+	 * Display
+	 * Delete
+	 * Filter
+	 * Categories
+	 * Update
+	 * Comment
 
 User story 1
 ```
